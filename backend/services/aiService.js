@@ -1,3 +1,5 @@
+import fetch from "node-fetch";
+
 export async function generateAssets(data) {
 
 const prompt = `
@@ -16,7 +18,9 @@ certificate
 summary
 `;
 
-const response = await fetch("https://api.together.xyz/v1/chat/completions", {
+const response = await fetch(
+"https://api.together.xyz/v1/chat/completions",
+{
 method: "POST",
 headers: {
 Authorization: `Bearer ${process.env.TOGETHER_API_KEY}`,
@@ -24,9 +28,10 @@ Authorization: `Bearer ${process.env.TOGETHER_API_KEY}`,
 },
 body: JSON.stringify({
 model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
-messages: [{ role: "user", content: prompt }]
+messages: [{role:"user",content:prompt}]
 })
-});
+}
+);
 
 const result = await response.json();
 
