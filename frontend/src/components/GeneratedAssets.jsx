@@ -2,19 +2,33 @@ function GeneratedAssets({ assets }) {
   if (!assets) return null;
 
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
+    <div style={{ maxWidth: "800px", margin: "30px auto", padding: "20px" }}>
       <h2>Generated Assets</h2>
 
-      <pre
-        style={{
-          background: "#f5f5f5",
-          padding: "15px",
-          borderRadius: "6px",
-          overflow: "auto"
-        }}
-      >
-        {JSON.stringify(assets, null, 2)}
-      </pre>
+      <div>
+        <h3>Poster Text</h3>
+        <pre>{assets.poster}</pre>
+      </div>
+
+      <div>
+        <h3>Social Caption</h3>
+        <pre>{assets.socialCaption}</pre>
+      </div>
+
+      <div>
+        <h3>Email Invitation</h3>
+        <pre>{assets.email}</pre>
+      </div>
+
+      <div>
+        <h3>Certificate Text</h3>
+        <pre>{assets.certificate}</pre>
+      </div>
+
+      <div>
+        <h3>Event Summary</h3>
+        <pre>{assets.summary}</pre>
+      </div>
     </div>
   );
 }
