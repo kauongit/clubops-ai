@@ -2,7 +2,7 @@
 
 # ♣️ClubOps AI - *"_One Prompt = Complete Event Management_"*
 
-## [Live Demo](https://clubops-ai-vercel-o7dyd34ei-kauongits-projects.vercel.app/) ## [Backend API](https://clubops-ai.onrender.com)
+## [Live Demo](https://clubops-ai-vercel-o7dyd34ei-kauongits-projects.vercel.app/) | [Backend API](https://clubops-ai.onrender.com)
 
 ClubOps AI is an end-to-end generative AI platform designed to help college clubs
 plan, execute, and document events using a single prompt.
@@ -59,3 +59,4 @@ participation, and community building rather than logistics.
 ## Project Documentation
 Minutes of team discussions and planning meetings are available in the
 `docs/meetings/` directory.
+
