@@ -7,7 +7,7 @@ function App() {
   const [assets, setAssets] = useState(null);
   const resultsRef = useRef(null);
 
-  // scroll when assets update
+  // Auto-scroll to results when assets are generated
   useEffect(() => {
     if (assets && resultsRef.current) {
       resultsRef.current.scrollIntoView({ behavior: "smooth" });
@@ -15,7 +15,7 @@ function App() {
   }, [assets]);
 
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <EventForm onGenerate={setAssets} />
 
